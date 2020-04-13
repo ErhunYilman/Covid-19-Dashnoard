@@ -1,0 +1,86 @@
+<!doctype html>
+<html class="no-js" lang="nl-NL">
+
+<head>
+  <meta charset="utf-8">
+  <title>SpaceX</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <meta name="theme-color" content="#fafafa">
+  
+  <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <main>
+    <div class="left-bar">
+      <table class='data-table'>
+        <thead>
+          <tr>
+            <td>Country</td>
+            <td>Confirmed</td>
+            <td>Death</td>
+            <td>Recoverd</td>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="center-bar">
+      <div id="map"></div>
+    </div>
+    <div class="right-bar">
+      <div class="right-content">
+        <div class="box yellow">
+          <div class="description">
+            <div class="title">New confirmed</div>
+            <div class="number" id="new-confirmed"></div>
+          </div>
+        </div>
+        <div class="box yellow">
+          <div class="description">
+            <div class="title">Total confirmed</div>
+            <div class="number" id="total-confirmed"></div>
+          </div>
+        </div>
+        <div class="box red">
+          <div class="description">
+            <div class="title">New deaths</div>
+            <div class="number" id="new-deaths"></div>
+          </div>
+        </div>
+        <div class="box red">
+          <div class="description">
+            <div class="title">Total deaths</div>
+            <div class="number" id="total-deaths"></div>
+          </div>
+        </div>
+        <div class="box green">
+          <div class="description">
+            <div class="title">New recoverd</div>
+            <div class="number" id="new-recoverd"></div>
+          </div>
+        </div>
+        <div class="box green">
+          <div class="description-task">
+            <div class="title">Total recoverd</div>
+            <div class="number" id="total-recoverd"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel" src="./js/app.js"></script>
+</body>
+
+</html>

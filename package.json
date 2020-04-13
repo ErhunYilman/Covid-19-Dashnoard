@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "@babel/preset-env": "^7.9.0",
+    "browser-sync": "^2.26.7"
+  },
+  "scripts": {
+    "serve": "browser-sync start --server --files 'css/styles.css' 'js/app.js' 'index.html'"
+  }
+}
