@@ -21,6 +21,10 @@ body {
   font-size: 12px;
 }
 
+header {
+  text-align: center;
+}
+
 main {
   display: flex;
   align-content: center;
